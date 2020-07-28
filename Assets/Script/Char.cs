@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Char : MonoBehaviour
 {
@@ -8,9 +9,15 @@ public class Char : MonoBehaviour
     public float JumpForce;
     public bool isJumping;
     public bool doubleJumping;
+   public float walljumpForce;
+   public Vector2 walljumpDirection;
     private Rigidbody2D jp;
     private Animator animacao;
-   
+   private bool isGrounded;
+   public Transform Wallcheck;
+    public int life;
+    public int qtdDonuts;
+    public Text scoreText;
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +31,7 @@ public class Char : MonoBehaviour
     {
         Move();
         Jump();
+    
     }
 
     void Move()
@@ -56,7 +64,7 @@ public class Char : MonoBehaviour
                 doubleJumping = true;
            }else {
                if(doubleJumping){
-                    jp.AddForce(new Vector2(0f, JumpForce), ForceMode2D.Impulse);
+                    jp.AddForce(new Vector2(0f, JumpForce/1.005f), ForceMode2D.Impulse);
                     animacao.SetBool("jump", true);
                     doubleJumping = false;
                }
@@ -72,6 +80,7 @@ public class Char : MonoBehaviour
         if(collision.gameObject.layer==8){
             isJumping = false;
             animacao.SetBool("jump", false);
+            isGrounded = true;
         }
     }
      void OnCollisionExit2D(Collision2D collision) {
@@ -80,9 +89,24 @@ public class Char : MonoBehaviour
         }
         if(collision.gameObject.layer==8){
             isJumping = true;
+            isGrounded = false;
             animacao.SetBool("jump", true);
         }
         
     }
+    private void OnTriggerEnter2D(Collider2D col) {
+        if (col.gameObject.CompareTag("Donut")){
+            qtdDonuts++;
+            scoreText.text = qtdDonuts.ToString();
+        }
+    }
+    /// <summary>
+
+    private void OnDrawGizmos()
+    {
+     
+ 
+    }
+    
 }
 
