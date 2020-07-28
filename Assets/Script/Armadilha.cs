@@ -14,7 +14,9 @@ public class Armadilha : MonoBehaviour
         circle = GetComponent<CircleCollider2D>();
         box = GetComponent<BoxCollider2D>();
     }
-
+    private void OnCollisionEnter2D(Collision2D col) {
+        if(col.)
+    }
     private void OnTriggerEnter2D(Collider2D col) {
         if (col.gameObject.CompareTag("Player")){
             rb.bodyType = RigidbodyType2D.Dynamic;

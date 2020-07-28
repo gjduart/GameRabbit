@@ -6,6 +6,7 @@ public class Rosquinhas : MonoBehaviour
 {
     private SpriteRenderer sr;
     private CircleCollider2D circle;
+    
 
     public GameObject collected;
     public int Score;
