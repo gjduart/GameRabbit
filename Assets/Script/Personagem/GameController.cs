@@ -5,10 +5,15 @@ using UnityEngine;
 public class GameController : MonoBehaviour
 {
     public int totalScore;
-    public static GameController instance;
+    public static GameController instancia;
+
+    public GameObject gameover;
     void Start()
     {
-        instance = this;
+        instancia = this;
+    }
+    public void ShowGameOver(){
+        gameover.SetActive(true);
     }
 
 }

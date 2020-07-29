@@ -16,7 +16,7 @@ private void OnCollisionEnter2D(Collision2D colisor) {
     if (colisor.gameObject.tag.Equals("Player"))
 
          rg.bodyType = RigidbodyType2D.Dynamic;
-
+         Destroy(gameObject,2.5f);
      }
         
 }

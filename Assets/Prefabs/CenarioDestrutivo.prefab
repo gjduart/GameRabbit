@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7707429985847503388}
   - component: {fileID: 7707429985847503379}
   - component: {fileID: 7707429985847503390}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: chocoMid (4)
   m_TagString: Destrutivo
   m_Icon: {fileID: 0}
@@ -28,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7707429985847503377}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 130.259, y: -0.74294716, z: 0}
+  m_LocalPosition: {x: 130.261, y: -0.74294716, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7707429986111737239}
@@ -99,7 +99,7 @@ Rigidbody2D:
   m_Mass: 100
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0.75
+  m_GravityScale: 0.9
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -158,7 +158,7 @@ GameObject:
   - component: {fileID: 7707429985997158108}
   - component: {fileID: 7707429985997158099}
   - component: {fileID: 7707429985997158110}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: chocoMid (5)
   m_TagString: Destrutivo
   m_Icon: {fileID: 0}
@@ -173,7 +173,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7707429985997158097}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 130.963, y: -0.74294716, z: 0}
+  m_LocalPosition: {x: 130.955, y: -0.74294716, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7707429986111737239}
@@ -244,7 +244,7 @@ Rigidbody2D:
   m_Mass: 100
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0.75
+  m_GravityScale: 0.9
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -303,7 +303,7 @@ GameObject:
   - component: {fileID: 7707429986009043936}
   - component: {fileID: 7707429986009043943}
   - component: {fileID: 7707429986009043938}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: chocoMid (6)
   m_TagString: Destrutivo
   m_Icon: {fileID: 0}
@@ -318,7 +318,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7707429986009043941}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 131.662, y: -0.74294716, z: 0}
+  m_LocalPosition: {x: 131.651, y: -0.74294716, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7707429986111737239}
@@ -389,7 +389,7 @@ Rigidbody2D:
   m_Mass: 100
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0.75
+  m_GravityScale: 0.9
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -448,7 +448,7 @@ GameObject:
   - component: {fileID: 7707429986028264498}
   - component: {fileID: 7707429986028264497}
   - component: {fileID: 7707429986028264508}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: chocoMid (3)
   m_TagString: Destrutivo
   m_Icon: {fileID: 0}
@@ -534,7 +534,7 @@ Rigidbody2D:
   m_Mass: 100
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0.75
+  m_GravityScale: 0.9
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -589,7 +589,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7707429986111737239}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CenarioDestrutivo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -630,7 +630,7 @@ GameObject:
   - component: {fileID: 7707429986317990849}
   - component: {fileID: 7707429986317990848}
   - component: {fileID: 7707429986317990851}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: chocoMid
   m_TagString: Destrutivo
   m_Icon: {fileID: 0}
@@ -645,7 +645,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7707429986317990854}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 127.49, y: -0.736, z: 0}
+  m_LocalPosition: {x: 127.49, y: -0.743, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7707429986111737239}
@@ -716,7 +716,7 @@ Rigidbody2D:
   m_Mass: 100
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0.75
+  m_GravityScale: 0.9
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -775,7 +775,7 @@ GameObject:
   - component: {fileID: 7707429986365290610}
   - component: {fileID: 7707429986365290609}
   - component: {fileID: 7707429986365290620}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: chocoMid (2)
   m_TagString: Destrutivo
   m_Icon: {fileID: 0}
@@ -861,7 +861,7 @@ Rigidbody2D:
   m_Mass: 100
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0.75
+  m_GravityScale: 0.9
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -920,7 +920,7 @@ GameObject:
   - component: {fileID: 7707429987831305376}
   - component: {fileID: 7707429987831305383}
   - component: {fileID: 7707429987831305378}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: chocoMid (1)
   m_TagString: Destrutivo
   m_Icon: {fileID: 0}
@@ -1006,7 +1006,7 @@ Rigidbody2D:
   m_Mass: 100
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0.75
+  m_GravityScale: 0.9
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1

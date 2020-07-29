@@ -82,6 +82,9 @@ public class Char : MonoBehaviour
             animacao.SetBool("jump", false);
             isGrounded = true;
         }
+        if(collision.gameObject.tag.Equals("Dano")){
+            Debug.Log("Tocou o espinho");
+        }
     }
      void OnCollisionExit2D(Collision2D collision) {
         if(collision.gameObject.tag.Equals("Plataform")){
@@ -98,6 +101,10 @@ public class Char : MonoBehaviour
         if (col.gameObject.CompareTag("Donut")){
             qtdDonuts++;
             scoreText.text = qtdDonuts.ToString();
+        }
+         if(col.gameObject.tag == "Dano"){
+            GameController.instancia.ShowGameOver();
+            Destroy(gameObject,3f);
         }
     }
     /// <summary>
