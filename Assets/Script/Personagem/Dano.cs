@@ -13,9 +13,7 @@ public class Dano : MonoBehaviour
     void OnTriggerEnter2D(Collider2D colisor) {
         
  
-        if(colisor.gameObject.tag == "Player"){
-            GameController.instancia.ShowGameOver();
-        }
+    
         
     }
 

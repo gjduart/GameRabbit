@@ -9,15 +9,18 @@ public class Char : MonoBehaviour
     public float JumpForce;
     public bool isJumping;
     public bool doubleJumping;
-   public float walljumpForce;
-   public Vector2 walljumpDirection;
+    public float walljumpForce;
+    public Vector2 walljumpDirection;
     private Rigidbody2D jp;
     private Animator animacao;
-   private bool isGrounded;
-   public Transform Wallcheck;
+    private bool isGrounded;
+    public Transform Wallcheck;
     public int life;
+    public int qtdDano;
     public int qtdDonuts;
     public Text scoreText;
+    public Text Vidas;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -98,13 +101,27 @@ public class Char : MonoBehaviour
         
     }
     private void OnTriggerEnter2D(Collider2D col) {
+        if (col.gameObject.CompareTag("life1")){
+            qtdDano++;
+            GameController.instancia.setTotalVidas(qtdDano);
+            Vidas.text = GameController.instancia.getTotalVidas().ToString();
+           
+        }
         if (col.gameObject.CompareTag("Donut")){
             qtdDonuts++;
             scoreText.text = qtdDonuts.ToString();
         }
          if(col.gameObject.tag == "Dano"){
-            GameController.instancia.ShowGameOver();
-            Destroy(gameObject,3f);
+             qtdDano--;
+            Vidas.text = GameController.instancia.getTotalVidas().ToString();
+            GameController.instancia.setLife(qtdDano);
+            GameController.instancia.setTotalVidas(qtdDano);
+            
+            Debug.Log("vc tem " + qtdDano + "vidas");
+            if(qtdDano <=0){
+                    GameController.instancia.ShowGameOver();
+                    Destroy(gameObject);
+            }
         }
     }
     /// <summary>
