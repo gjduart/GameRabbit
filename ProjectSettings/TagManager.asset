@@ -12,6 +12,9 @@ TagManager:
   - life3
   - life2
   - life1
+  - morte
+  - agua
+  - ground
   layers:
   - Default
   - TransparentFX

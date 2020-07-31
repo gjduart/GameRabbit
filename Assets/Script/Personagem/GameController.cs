@@ -14,9 +14,9 @@ public class GameController : MonoBehaviour
     void Start()
     {
         TotalVidas = 3;
-        heart1.gameObject.SetActive(true);
+     /**   heart1.gameObject.SetActive(true);
         heart2.gameObject.SetActive(true);
-        heart3.gameObject.SetActive(true);
+        heart3.gameObject.SetActive(true);**/
         instancia = this;
     }
     public void ShowGameOver(){
@@ -28,7 +28,7 @@ public class GameController : MonoBehaviour
     public int getTotalVidas(){
         return TotalVidas;
     }
-    public void setLife(int health){
+  /**  public void setLife(int health){
         switch (health)
         {
             case 3: 
@@ -52,6 +52,6 @@ public class GameController : MonoBehaviour
                 heart3.gameObject.SetActive(false);
                 break;
         }
-    }
+    }**/
 
 }

@@ -19,14 +19,14 @@ public class Rosquinhas : MonoBehaviour
     
     void OnTriggerEnter2D(Collider2D colisor) {
         if(colisor.gameObject.tag =="Player"){
-            sr.enabled = false;
-            circle.enabled = false;
+          //  sr.enabled = false;
+           // circle.enabled = false;
             collected.SetActive(true);
             
            
 
 
-            Destroy(gameObject, 1f);
+            //Destroy(gameObject, 1f);
         }
     }
 }

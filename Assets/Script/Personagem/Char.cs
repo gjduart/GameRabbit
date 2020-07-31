@@ -14,6 +14,7 @@ public class Char : MonoBehaviour
     private Rigidbody2D jp;
     private Animator animacao;
     private bool isGrounded;
+    public bool inWater;
     public Transform Wallcheck;
     public int life;
     public int qtdDano;
@@ -32,9 +33,20 @@ public class Char : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         Move();
-        Jump();
-    
+        if(!inWater){
+            Jump();
+        } else {
+          if (Input.GetKey(KeyCode.UpArrow)){
+            jp.AddForce(new Vector2(0, 6f * Time.deltaTime), ForceMode2D.Impulse);
+        }
+        if (Input.GetKey(KeyCode.DownArrow)){
+            jp.AddForce(new Vector2(0, -6f * Time.deltaTime), ForceMode2D.Impulse);
+        }
+        jp.AddForce(new Vector2(0, 10f * Time.deltaTime), ForceMode2D.Impulse);
+        }
+
     }
 
     void Move()
@@ -75,7 +87,9 @@ public class Char : MonoBehaviour
            }
        }
     }
-
+    void nadar(){
+   
+    }
     void OnCollisionEnter2D(Collision2D collision) {
         if(collision.gameObject.tag.Equals("Plataform")){
             this.transform.parent = collision.transform;
@@ -87,6 +101,11 @@ public class Char : MonoBehaviour
         }
         if(collision.gameObject.tag.Equals("Dano")){
             Debug.Log("Tocou o espinho");
+        }
+        if(collision.gameObject.CompareTag("morte")){
+            Destroy(gameObject);
+            Vidas.text = 0.ToString();
+            GameController.instancia.ShowGameOver();
         }
     }
      void OnCollisionExit2D(Collision2D collision) {
@@ -110,12 +129,21 @@ public class Char : MonoBehaviour
         if (col.gameObject.CompareTag("Donut")){
             qtdDonuts++;
             scoreText.text = qtdDonuts.ToString();
+            if(qtdDonuts>=100){
+                qtdDano++;
+                GameController.instancia.setTotalVidas(qtdDano);
+                Vidas.text = GameController.instancia.getTotalVidas().ToString();
+                qtdDonuts = 0;
+                scoreText.text = qtdDonuts.ToString();
+            }
         }
          if(col.gameObject.tag == "Dano"){
-             qtdDano--;
+            qtdDano--;
             Vidas.text = GameController.instancia.getTotalVidas().ToString();
-            GameController.instancia.setLife(qtdDano);
             GameController.instancia.setTotalVidas(qtdDano);
+            qtdDonuts = 0;
+             scoreText.text = qtdDonuts.ToString();
+           // GameController.instancia.setLife(qtdDano);
             
             Debug.Log("vc tem " + qtdDano + "vidas");
             if(qtdDano <=0){
@@ -123,8 +151,19 @@ public class Char : MonoBehaviour
                     Destroy(gameObject);
             }
         }
+        if(col.gameObject.CompareTag("agua")){
+            inWater = true;
+        }
+
     }
-    /// <summary>
+
+    void OnTriggerExit2D(Collider2D col)
+    {
+        if(col.gameObject.CompareTag("agua")){
+            inWater = false;
+        }
+    }
+
 
     private void OnDrawGizmos()
     {
