@@ -52,3 +52,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Transition
+    uniqueID: 793066953
+    locked: 0
+  - name: New Layer
+    uniqueID: 2232536485
+    locked: 0
