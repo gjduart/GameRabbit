@@ -105,6 +105,7 @@ public class Char : MonoBehaviour
         if(collision.gameObject.CompareTag("morte")){
             Destroy(gameObject);
             Vidas.text = 0.ToString();
+            
             GameController.instancia.ShowGameOver();
         }
     }

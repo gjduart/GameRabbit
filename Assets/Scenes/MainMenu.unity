@@ -1404,7 +1404,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3309831a1e029b46b666ddad8458e94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cena: SampleScene
+  cena: Storytelling
   creditos: {fileID: 95127450}
   levelLoader: {fileID: 2024992146}
 --- !u!4 &1627353810
