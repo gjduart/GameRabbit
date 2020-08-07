@@ -8,6 +8,7 @@ public class GameController : MonoBehaviour
 {
     public int totalScore;
     public static GameController instancia;
+    public  bool existe;
     public int TotalVidas;
     public Text vidas;    
     public GameObject heart1,heart2,heart3;
@@ -24,6 +25,7 @@ public class GameController : MonoBehaviour
         TotalVidas = 3;
         instancia = this;
         Time.timeScale = 1f;
+        existe = true;
     }
 
     /// <summary>
@@ -51,6 +53,7 @@ public class GameController : MonoBehaviour
         }
     }
     public void ShowGameOver(){
+        setExiste(false);
         gameover.SetActive(true);
     }
     public void setTotalVidas(int vidas){
@@ -58,6 +61,12 @@ public class GameController : MonoBehaviour
     }
     public int getTotalVidas(){
         return TotalVidas;
+    }
+    public void setExiste(bool state){
+        existe = state;
+    }
+    public bool getExiste(){
+        return existe ;
     }
   /**  public void setLife(int health){
         switch (health)

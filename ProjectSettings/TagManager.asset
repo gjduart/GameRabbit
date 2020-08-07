@@ -15,6 +15,7 @@ TagManager:
   - morte
   - agua
   - ground
+  - CabecaInimigo
   layers:
   - Default
   - TransparentFX

@@ -21,13 +21,14 @@ public class Char : MonoBehaviour
     public int qtdDonuts;
     public Text scoreText;
     public Text Vidas;
-    
+    public static bool exist;
 
     // Start is called before the first frame update
     void Start()
     {
         jp =GetComponent<Rigidbody2D>();
         animacao = GetComponent<Animator>();
+        exist = true;
     }
 
     // Update is called once per frame
@@ -99,8 +100,20 @@ public class Char : MonoBehaviour
             animacao.SetBool("jump", false);
             isGrounded = true;
         }
-        if(collision.gameObject.tag.Equals("Dano")){
-            Debug.Log("Tocou o espinho");
+         if(collision.gameObject.tag == "Dano"){
+            qtdDano--;
+            GameController.instancia.setTotalVidas(qtdDano);
+            Vidas.text = GameController.instancia.getTotalVidas().ToString();
+            qtdDonuts = 0;
+             scoreText.text = qtdDonuts.ToString();
+           // GameController.instancia.setLife(qtdDano);
+            
+            Debug.Log("vc tem " + qtdDano + "vidas");
+            if(qtdDano <=0){
+                    exist = false;
+                    Destroy(gameObject);
+                    GameController.instancia.ShowGameOver();
+            }
         }
         if(collision.gameObject.CompareTag("morte")){
             Destroy(gameObject);
@@ -140,14 +153,15 @@ public class Char : MonoBehaviour
         }
          if(col.gameObject.tag == "Dano"){
             qtdDano--;
-            Vidas.text = GameController.instancia.getTotalVidas().ToString();
             GameController.instancia.setTotalVidas(qtdDano);
+            Vidas.text = GameController.instancia.getTotalVidas().ToString();
             qtdDonuts = 0;
              scoreText.text = qtdDonuts.ToString();
            // GameController.instancia.setLife(qtdDano);
             
             Debug.Log("vc tem " + qtdDano + "vidas");
             if(qtdDano <=0){
+                    exist = false;
                     GameController.instancia.ShowGameOver();
                     Destroy(gameObject);
             }
