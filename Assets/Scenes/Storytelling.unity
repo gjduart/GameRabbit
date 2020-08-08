@@ -854,7 +854,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &782335819
 RectTransform:
   m_ObjectHideFlags: 0
@@ -872,7 +872,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 271.3, y: -143.1}
+  m_AnchoredPosition: {x: 266, y: -150}
   m_SizeDelta: {x: 96.40747, y: 92.34772}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &782335820
@@ -1094,14 +1094,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.41451585, g: 0.6509434, b: 0.5981181, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 55b87edb292394749baed8e50b44fa91, type: 3}
+    m_Font: {fileID: 12800000, guid: c68f2fd3ccf05f6439a9fa1e9a7b46e7, type: 3}
     m_FontSize: 7
     m_FontStyle: 0
     m_BestFit: 1
@@ -1113,7 +1113,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Mas esse Doce mundo esta amea\xE7ado."
+  m_Text: "Mas esse Doce mundo est\xE1 amea\xE7ado..."
 --- !u!222 &983230591
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1172,14 +1172,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.33922213, g: 0.5395123, b: 0.7264151, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 55b87edb292394749baed8e50b44fa91, type: 3}
+    m_Font: {fileID: 12800000, guid: c68f2fd3ccf05f6439a9fa1e9a7b46e7, type: 3}
     m_FontSize: 7
     m_FontStyle: 0
     m_BestFit: 1
@@ -1313,7 +1313,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5.8, y: 7}
+  m_AnchoredPosition: {x: -11, y: 44.767}
   m_SizeDelta: {x: 707.9027, y: 360.5428}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1323398174
@@ -1329,14 +1329,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.89411765, g: 0.53512913, b: 0.2021627, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 55b87edb292394749baed8e50b44fa91, type: 3}
+    m_Font: {fileID: 12800000, guid: c68f2fd3ccf05f6439a9fa1e9a7b46e7, type: 3}
     m_FontSize: 7
     m_FontStyle: 0
     m_BestFit: 1
@@ -1348,7 +1348,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: E Cabe a Rabelo, o coleho, defender seu mundo, e sua familia.
+  m_Text: "E cabe a snow  , o coelho, defender seu mundo, e sua fam\xEDlia."
 --- !u!222 &1323398175
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1793,14 +1793,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.6792453, g: 0.40690637, b: 0.40690637, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 55b87edb292394749baed8e50b44fa91, type: 3}
+    m_Font: {fileID: 12800000, guid: c68f2fd3ccf05f6439a9fa1e9a7b46e7, type: 3}
     m_FontSize: 7
     m_FontStyle: 0
     m_BestFit: 1
@@ -1812,7 +1812,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Numa Galaxia muito Distante, \nHavia um planeta muito peculiar. "
+  m_Text: "Numa Gal\xE1xia muito Distante, \nHavia um planeta muito peculiar. "
 --- !u!222 &1481859784
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1857,8 +1857,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 271.3, y: -143.1}
-  m_SizeDelta: {x: 96.40747, y: 92.34772}
+  m_AnchoredPosition: {x: 316, y: -139.4}
+  m_SizeDelta: {x: 73.026215, y: 67.73593}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1540100935
 MonoBehaviour:
@@ -2065,9 +2065,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 271.3, y: -143.1}
-  m_SizeDelta: {x: 96.40747, y: 92.34772}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 211.8, y: -151.1}
+  m_SizeDelta: {x: 65.95557, y: 64.94101}
+  m_Pivot: {x: 0.4999998, y: 0.56595105}
 --- !u!114 &1572609479
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2305,14 +2305,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.89913255, g: 0.9137255, b: 0.65882355, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 55b87edb292394749baed8e50b44fa91, type: 3}
+    m_Font: {fileID: 12800000, guid: c68f2fd3ccf05f6439a9fa1e9a7b46e7, type: 3}
     m_FontSize: 7
     m_FontStyle: 0
     m_BestFit: 1
@@ -2324,8 +2324,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Candyland, um planeta praticamente feito de doces, onde as arvores sao
-    de menta, as pedras \nde chocolate e o chao rico em nutrientes."
+  m_Text: "Candyland, um planeta praticamente feito de doces, onde as \xE1rvores
+    s\xE3o de menta, as pedras \nde chocolate e o ch\xE3o rico em nutrientes."
 --- !u!222 &1698637557
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2384,14 +2384,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.7554438, g: 0.51957995, b: 0.7924528, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 55b87edb292394749baed8e50b44fa91, type: 3}
+    m_Font: {fileID: 12800000, guid: c68f2fd3ccf05f6439a9fa1e9a7b46e7, type: 3}
     m_FontSize: 7
     m_FontStyle: 0
     m_BestFit: 1
@@ -2403,7 +2403,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Para vender no mercado negro intergalactico.
+  m_Text: "Para vender no mercado negro intergal\xE1tico."
 --- !u!222 &1780661191
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2634,7 +2634,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2005828798
 MonoBehaviour:
   m_ObjectHideFlags: 0
